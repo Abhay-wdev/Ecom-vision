@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+.back{
+    background-color: #ff99ac;
+    background-image: radial-gradient(at 98% 65%, #f7ae6e 0, transparent 50%), radial-gradient(at 53% 39%, #9057e5 0, transparent 50%), radial-gradient(at 96% 88%, #f39682 0, transparent 50%), radial-gradient(at 62% 6%, #6cbfe5 0, transparent 50%), radial-gradient(at 56% 25%, #a5e9a7 0, transparent 50%), radial-gradient(at 86% 80%, #eac376 0, transparent 50%), radial-gradient(at 67% 90%, #6469fc 0, transparent 50%);
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

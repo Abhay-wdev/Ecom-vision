@@ -1,0 +1,9 @@
+# robots.txt for https://seocialmedia.in/sitemap.js
+
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /api/
+Sitemap: https://seocialmedia.in/sitemap.js
