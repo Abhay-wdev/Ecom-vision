@@ -1,54 +1,82 @@
+'use client';
 import React, { useState, useEffect } from 'react';
-import { Code, Search, PenTool, MousePointer, Share2,  
-Building 
-} from 'lucide-react';
+import { Globe, Users, Code, ShoppingCart, Search, Facebook, Box, Package, Store, Truck } from 'lucide-react';
 import Image from 'next/image';
+
 const ServicesCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const services = [
     {
+      icon: Globe,
+      title: 'Digital Marketing Services',
+      description: 'Comprehensive digital strategies to grow your business online.',
+      image: '/images/Ecom/digital-markiting.webp',
+      actionLink: '/digital-marketing-company-jaipur',
+    },
+    {
+      icon: Users,
+      title: 'Social Media Marketing',
+      description: 'Engage your audience and build brand awareness on social platforms.',
+      image: '/images/Ecom/socialmedia-markiting.webp',
+      actionLink: '/social-media-marketing-jaipur',
+    },
+    {
       icon: Code,
-      title: 'Web Development',
-      description: 'Building modern, responsive websites that drive results.',
-      image: 'images/website-dev.jpg',
+      title: 'Website Development',
+      description: 'Responsive and modern websites that convert visitors into customers.',
+      image: '/images/Ecom/website-dev.webp',
       actionLink: '/web-development-company-jaipur',
     },
     {
+      icon: ShoppingCart,
+      title: 'E-commerce Listing',
+      description: 'Optimize your product listings for marketplaces to boost sales.',
+      image: '/images/Ecom/product-listing.webp',
+      actionLink: '/ecommerce-listing-service-jaipur',
+    },
+    {
       icon: Search,
-      title: 'SEO',
-      description: 'Boost your visibility and attract organic traffic.',
-      image: 'images/seo.jpg',
-      actionLink: '/seo-company-jaipur',
+      title: 'Google Ads',
+      description: 'Targeted PPC campaigns to maximize ROI and traffic.',
+      image: '/images/Ecom/google-ads.webp',
+      actionLink: '/lead-generation-company-jaipur',
     },
     {
-      icon: Building,
-      title: 'Video Editing',
-      description: 'High-quality videos that capture attention and elevate your brand.',
-      image: 'images/video-editing.jpg',
-      actionLink: '/video-editing-company-jaipur',
+      icon: Facebook,
+      title: 'Meta Ads',
+      description: 'Reach the right audience on Facebook & Instagram effectively.',
+      image: '/images/Ecom/meta-ads.webp',
+      actionLink: '/meta-ads-services',
     },
     {
-      icon: MousePointer,
-      title: 'Google Services',
-      description: 'Strategic PPC campaigns that maximize ROI.',
-      image: 'images/googlead.jpg',
-      actionLink: '/lead-generation-company-jaipur ',
+      icon: Box,
+      title: 'Amazon Account Management',
+      description: 'End-to-end services for managing and growing your Amazon store.',
+      image: '/images/Ecom/amazon1.webp',
+      actionLink: '/amazon-account-management-services',
     },
     {
-      icon: PenTool,
-      title: 'Content Writing',
-      description: 'Compelling content that engages your audience.',
-      image: 'images/content-writing.jpg',
-      actionLink: '/content-writing-company-jaipur',
+      icon: Package,
+      title: 'Flipkart Account Management',
+      description: 'Optimize your Flipkart store for better visibility and sales.',
+      image: '/images/Ecom/flipkart1.webp',
+      actionLink: '/flipkart-account-management-services',
     },
     {
-      icon: Share2,
-      title: 'Social Media Marketing',
-      description: 'Strategic campaigns that build brand awareness.',
-      image: 'images/social-media.jpg',
-      actionLink: '/social-media-marketing-jaipur',
-    }
+      icon: Store,
+      title: 'Meesho Account Management',
+      description: 'Professional management of your Meesho store to increase revenue.',
+      image: '/images/Ecom/meesho1.webp',
+      actionLink: '/meesho-account-management-services',
+    },
+    {
+      icon: Truck,
+      title: 'JioMart Account Management',
+      description: 'Manage your JioMart account efficiently with optimized listings.',
+      image: '/images/Ecom/jiomart1.webp',
+      actionLink: '/jiomart-account-management-services',
+    },
   ];
 
   useEffect(() => {
@@ -67,7 +95,7 @@ const ServicesCarousel = () => {
             <span className="text-yellow-400 text-sm font-semibold">Services</span>
           </div>
           <h2 className="text-2xl md:text-3xl font-bold text-white bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-white to-yellow-400">
-            Digital Solutions
+            Our Solutions
           </h2>
         </div>
 
@@ -84,15 +112,13 @@ const ServicesCarousel = () => {
                     {/* Image Section */}
                     <div className="relative h-48 md:h-[350px] overflow-hidden group">
                       <Image
-                        src={`/images/website-dev.jpg`} // <-- Add leading slash if using public folder
+                        src={service.image}
                         alt={service.title}
                         width={600}
                         height={350}
                         className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-gradient-to-br from-gray-900/90 via-gray-900/80 to-transparent transition-opacity duration-700 group-hover:opacity-75" />
-                      
-                      {/* Content Overlay */}
                       <div className="relative h-full p-4 md:p-6 flex flex-col justify-between z-10">
                         <div className="space-y-2 transform transition-all duration-500 group-hover:translate-y-1">
                           <div className="flex items-center space-x-2">
@@ -105,7 +131,7 @@ const ServicesCarousel = () => {
                       </div>
                     </div>
 
-                    {/* New Right Section */}
+                    {/* Description Section */}
                     <div className="p-4 md:p-6 bg-gradient-to-br from-gray-900 to-gray-800 flex flex-col justify-center">
                       <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
                       <p className="text-gray-300 mb-4">{service.description}</p>

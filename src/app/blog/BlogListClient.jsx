@@ -3,12 +3,13 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { FaFacebookF, FaSearch, FaChartBar, FaCalendar, FaUser, FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 const BlogListClient = () => {
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
+  const [hoveredCard, setHoveredCard] = useState(null);
   const blogsPerPage = 6;
 
   // Sync state with URL search params on first render or when they change
@@ -107,11 +108,12 @@ const BlogListClient = () => {
 
   if (loading) {
     return (
-      <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-        <div className="relative">
+      <div className="flex flex-col justify-center items-center min-h-screen bg-gradient-to-br from-slate-50 to-blue-100">
+        <div className="relative mb-6">
           <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-blue-500"></div>
           <div className="absolute inset-0 animate-pulse rounded-full h-16 w-16 border-4 border-blue-200 opacity-30"></div>
         </div>
+        <div className="text-lg font-medium text-gray-700 animate-pulse">Loading amazing content...</div>
       </div>
     );
   }
@@ -129,16 +131,22 @@ const BlogListClient = () => {
         "@type": "BlogPosting",
         headline: blog.heading,
         description: blog.excerpt,
-        url: `https://seocialmedia.in/blog/${blog.slug}`,
+        url: `https://ecomvision.in/blog/${blog.slug}`,
         datePublished: blog.date,
         image: `https://seocialmedia.in${blog.image}`,
         author: {
           "@type": "Person",
-          name: blog.author || "SEOcial Media",
+          name: blog.author || "VIRAL nexus",
         },
       },
     })),
   };
+
+  const categories = [
+    { icon: <FaFacebookF className="text-white text-sm" />, label: "Social Media", color: "from-blue-500 to-cyan-400" },
+    { icon: <FaSearch className="text-white text-sm" />, label: "SEO", color: "from-purple-500 to-pink-400" },
+    { icon: <FaChartBar className="text-white text-sm" />, label: "Analytics", color: "from-indigo-500 to-sky-400" },
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
@@ -153,118 +161,129 @@ const BlogListClient = () => {
           }}
         ></div>
 
-        <div className="relative container mx-auto px-4 pt-32 pb-24">
-          <div className="text-center">
-            <div className="inline-flex items-center bg-white/10 bg-opacity-10 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
-              <span className="text-white text-sm font-medium">
-                Digital Marketing Insights
+        <div className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-black">
+          {/* Glow overlay */}
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.1)_0%,transparent_70%)]"></div>
+          {/* Animated shapes */}
+          <div className="absolute top-20 left-10 w-64 h-64 bg-purple-500 rounded-full mix-blend-soft-light filter blur-3xl opacity-20 animate-pulse"></div>
+          <div className="absolute bottom-10 right-20 w-72 h-72 bg-blue-500 rounded-full mix-blend-soft-light filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '2s' }}></div>
+
+          <div className="relative container mx-auto px-6 pt-40 pb-28 text-center">
+            {/* Tagline */}
+            <div className="inline-flex items-center px-6 py-3 mb-8 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm transition-all duration-300 hover:bg-white/10">
+              <span className="text-white text-sm font-medium tracking-wide">
+                ✨ Digital Marketing Insights
               </span>
               <div className="w-2 h-2 bg-yellow-400 rounded-full ml-2 animate-pulse"></div>
             </div>
 
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Our{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">
+            {/* Heading */}
+            <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
+              Explore Our{" "}
+              <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
                 Blog
               </span>
             </h1>
 
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
-              Stay ahead of the digital curve with expert insights, proven
-              strategies, and the latest trends in social media marketing and
-              SEO from Jaipur's premier digital marketing agency.
+            {/* Description */}
+            <p className="text-lg md:text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed mb-10">
+              Stay ahead of the curve with insights, strategies, and trends in digital marketing,
+              SEO, and social media — brought to you by{" "}
+              <span className="text-yellow-400 font-semibold">Jaipur's leading marketing experts.</span>
             </p>
 
-            <div className="flex flex-wrap justify-center gap-4 mt-8">
-              <div className="flex items-center text-blue-200">
-                <div className="w-8 h-8 bg-blue-500 bg-opacity-30 rounded-full flex items-center justify-center mr-2">
-                  <span className="text-sm">📱</span>
+            {/* Category Tags */}
+            <div className="flex flex-wrap justify-center gap-4">
+              {categories.map((item, index) => (
+                <div
+                  key={index}
+                  className="flex items-center px-5 py-3 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1"
+                >
+                  <div
+                    className={`w-10 h-10 rounded-full flex items-center justify-center mr-3 bg-gradient-to-r ${item.color} shadow-lg`}
+                  >
+                    {item.icon}
+                  </div>
+                  <span className="text-blue-100 text-sm font-medium">{item.label}</span>
                 </div>
-                <span className="text-sm">Social Media</span>
-              </div>
-              <div className="flex items-center text-blue-200">
-                <div className="w-8 h-8 bg-purple-500 bg-opacity-30 rounded-full flex items-center justify-center mr-2">
-                  <span className="text-sm">🚀</span>
-                </div>
-                <span className="text-sm">SEO</span>
-              </div>
-              <div className="flex items-center text-blue-200">
-                <div className="w-8 h-8 bg-indigo-500 bg-opacity-30 rounded-full flex items-center justify-center mr-2">
-                  <span className="text-sm">📊</span>
-                </div>
-                <span className="text-sm">Analytics</span>
-              </div>
+              ))}
             </div>
+
+            {/* Decorative Glow */}
+            <div className="absolute -bottom-24 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-t from-yellow-400/10 to-transparent rounded-full blur-3xl"></div>
           </div>
         </div>
-
-        {/* Floating elements */}
-        {/* <div className="absolute top-20 right-10 w-20 h-20 bg-yellow-400 bg-opacity-20 rounded-full blur-xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-32 h-32 bg-purple-500 bg-opacity-20 rounded-full blur-xl animate-pulse" style={{ animationDelay: '1s' }}></div> */}
       </div>
+
       {/* Blog Stats */}
       <div className="container mx-auto px-4 py-8">
-        <div className="flex flex-col sm:flex-row justify-between items-center bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-white border-opacity-20">
+        <div className="flex flex-col sm:flex-row justify-between items-center bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-white/30">
           <div className="mb-4 sm:mb-0">
-            <h2 className="text-lg font-semibold text-gray-800">
-              Latest Articles
+            <h2 className="text-xl font-bold text-gray-800 flex items-center">
+              <span className="mr-2">📝</span> Latest Articles
             </h2>
-            <p className="text-gray-600">
+            <p className="text-gray-600 mt-1">
               Showing {startIndex + 1}-{Math.min(endIndex, blogs.length)} of{" "}
               {blogs.length} articles
             </p>
           </div>
-          <div className="text-sm text-gray-500">
-            Page {currentPage} of {totalPages}
+          <div className="flex items-center px-4 py-2 bg-blue-50 rounded-xl">
+            <span className="text-sm font-medium text-blue-700">
+              Page {currentPage} of {totalPages}
+            </span>
           </div>
         </div>
       </div>
+
       {/* Blog Grid */}
       <div className="blog-grid container mx-auto px-4 pb-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {currentBlogs.map((blog) => (
             <article
               key={blog.id}
-              className="group bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-white border-opacity-20"
+              className="group bg-white/90 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-white/30"
+              onMouseEnter={() => setHoveredCard(blog.id)}
+              onMouseLeave={() => setHoveredCard(null)}
             >
               <Link href={`/blog/${blog.slug}`} className="block relative">
                 <div className="h-64 bg-gradient-to-br from-blue-400 to-purple-600 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black from-opacity-30 to-transparent z-10"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10"></div>
                   <Image
                     src={blog.image || "/images/placeholder.jpg"}
                     alt={blog.alt || blog.heading}
-                    width={600} // A reasonable width for the blog card
-                    height={400} // A reasonable height, maintaining a 3:2 aspect ratio
+                    width={600}
+                    height={400}
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                   />
-                  <div className="absolute top-4 right-4 z-20">
-                    <div className="w-10 h-10 bg-white/10 bg-opacity-20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                      <svg
-                        className="w-5 h-5 text-white"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M14 5l7 7m0 0l-7 7m7-7H3"
-                        />
-                      </svg>
+                  <div className={`absolute top-4 right-4 z-20 transition-opacity duration-300 ${hoveredCard === blog.id ? 'opacity-100' : 'opacity-0'}`}>
+                    <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30">
+                      <FaArrowRight className="w-5 h-5 text-white" />
                     </div>
+                  </div>
+                  <div className="absolute bottom-4 left-4 z-20">
+                    <span className="inline-block px-3 py-1 bg-blue-600/80 backdrop-blur-sm text-white text-xs font-semibold rounded-full">
+                      {blog.category || 'Marketing'}
+                    </span>
                   </div>
                 </div>
               </Link>
 
               <div className="p-7">
                 <div className="flex items-center text-sm text-blue-600 mb-4">
-                  <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mr-3">
-                    <span className="text-white text-xs font-bold">SM</span>
+                  <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mr-3 shadow-md">
+                    <span className="text-white text-xs font-bold"> 
+                      {blog.author
+                        ?.split(" ")
+                        .slice(0, 2)
+                        .map(word => word[0])
+                        .join("")
+                        .toUpperCase()} 
+                    </span>
                   </div>
                   <div>
-                    <div className="font-medium">{blog.author}</div>
-                    <div className="text-gray-500 text-xs">
+                    <div className="font-medium text-gray-800">{blog.author}</div>
+                    <div className="flex items-center text-gray-500 text-xs mt-1">
+                      <FaCalendar className="mr-1" />
                       {new Date(blog.date).toLocaleDateString("en-US", {
                         year: "numeric",
                         month: "short",
@@ -289,7 +308,7 @@ const BlogListClient = () => {
                     blog.tags.map((tag, tagIndex) => (
                       <span
                         key={tagIndex}
-                        className="text-xs font-medium bg-gradient-to-r from-blue-100 to-indigo-100 text-blue-700 px-3 py-1 rounded-full border border-blue-200 border-opacity-50 hover:from-blue-200 hover:to-indigo-200 transition-all duration-300 cursor-pointer"
+                        className="text-xs font-medium bg-gradient-to-r from-blue-100 to-indigo-100 text-blue-700 px-3 py-1.5 rounded-full border border-blue-200/50 hover:from-blue-200 hover:to-indigo-200 transition-all duration-300 cursor-pointer"
                       >
                         #{tag}
                       </span>
@@ -301,19 +320,7 @@ const BlogListClient = () => {
                   className="inline-flex items-center bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                 >
                   Read Full Article
-                  <svg
-                    className="w-4 h-4 ml-2"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M14 5l7 7m0 0l-7 7m7-7H3"
-                    />
-                  </svg>
+                  <FaArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </div>
             </article>
@@ -323,7 +330,7 @@ const BlogListClient = () => {
         {/* Pagination */}
         {totalPages > 1 && (
           <div className="mt-16 flex justify-center">
-            <div className="bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-white border-opacity-20">
+            <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-white/30">
               <nav className="flex items-center space-x-2">
                 {/* Previous Button */}
                 <button
@@ -331,23 +338,11 @@ const BlogListClient = () => {
                   disabled={currentPage === 1}
                   className={`flex items-center px-4 py-2 rounded-xl font-medium transition-all duration-300 ${
                     currentPage === 1
-                      ? "text-gray-400 cursor-not-allowed"
+                      ? "text-gray-400 cursor-not-allowed bg-gray-100"
                       : "text-blue-600 hover:bg-blue-50 hover:text-blue-700"
                   }`}
                 >
-                  <svg
-                    className="w-4 h-4 mr-2"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M15 19l-7-7 7-7"
-                    />
-                  </svg>
+                  <FaArrowLeft className="w-4 h-4 mr-2" />
                   Previous
                 </button>
 
@@ -379,24 +374,12 @@ const BlogListClient = () => {
                   disabled={currentPage === totalPages}
                   className={`flex items-center px-4 py-2 rounded-xl font-medium transition-all duration-300 ${
                     currentPage === totalPages
-                      ? "text-gray-400 cursor-not-allowed"
+                      ? "text-gray-400 cursor-not-allowed bg-gray-100"
                       : "text-blue-600 hover:bg-blue-50 hover:text-blue-700"
                   }`}
                 >
                   Next
-                  <svg
-                    className="w-4 h-4 ml-2"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
+                  <FaArrowRight className="w-4 h-4 ml-2" />
                 </button>
               </nav>
             </div>
@@ -405,7 +388,7 @@ const BlogListClient = () => {
 
         {/* Call to Action Section */}
         <div className="mt-20 text-center">
-          <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-700 rounded-3xl p-12 relative overflow-hidden">
+          <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-700 rounded-3xl p-12 relative overflow-hidden shadow-2xl">
             <div
               className="absolute inset-0"
               style={{
@@ -413,21 +396,32 @@ const BlogListClient = () => {
                 opacity: 0.3,
               }}
             ></div>
+            
+            {/* Floating elements */}
+            <div className="absolute top-10 left-10 w-16 h-16 bg-yellow-400/20 rounded-full blur-xl animate-pulse"></div>
+            <div className="absolute bottom-10 right-10 w-24 h-24 bg-purple-500/20 rounded-full blur-xl animate-pulse" style={{ animationDelay: '1s' }}></div>
 
             <div className="relative z-10">
               <h3 className="text-3xl font-bold text-white mb-4">
                 Ready to Boost Your Digital Presence?
               </h3>
-              <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
+              <p className="text-blue-100 mb-8 max-w-2xl mx-auto text-lg">
                 Get expert digital marketing solutions tailored for your
                 business. Let's grow your online presence together!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="https://seocialmedia.in/contact"
-                  className="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                  href="https://ecomvision.in/contact"
+                  className="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center"
                 >
                   Get Free Consultation
+                  <FaArrowRight className="ml-2" />
+                </a>
+                <a
+                  href="https://ecomvision.in/services"
+                  className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-all duration-300 flex items-center justify-center"
+                >
+                  Our Services
                 </a>
               </div>
             </div>

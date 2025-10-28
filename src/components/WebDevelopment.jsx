@@ -150,13 +150,13 @@ const WebDevelopment = () => {
   const faqs = [
     {
       question:
-        "Why should I choose SEOcial Media Solutions over other web design companies in Jaipur?",
+        "Why should I choose VIRAL nexus over other web design companies in Jaipur?",
       answer:
-        "SEOcial Media Solutions stands out with our comprehensive approach combining cutting-edge technology, proven expertise, and personalized service. We offer end-to-end solutions from design to deployment, with ongoing support. Our team has delivered 500+ successful projects with 95% client satisfaction, ensuring your website not only looks great but also drives business results.",
+        "VIRAL nexus stands out with our comprehensive approach combining cutting-edge technology, proven expertise, and personalized service. We offer end-to-end solutions from design to deployment, with ongoing support. Our team has delivered 500+ successful projects with 95% client satisfaction, ensuring your website not only looks great but also drives business results.",
     },
     {
       question:
-        "What types of websites do you develop at SEOcial Media Solutions?",
+        "What types of websites do you develop at VIRAL nexus?",
       answer:
         "We develop a wide range of websites including corporate websites, e-commerce platforms, portfolio sites, blogs, educational platforms, healthcare websites, real estate portals, restaurant websites, and custom web applications. Our expertise spans across various industries and business sizes, from startups to enterprise-level solutions.",
     },
@@ -168,7 +168,7 @@ const WebDevelopment = () => {
     },
     {
       question:
-        "How much does it cost to build an eCommerce website with SEOcial Media Solutions?",
+        "How much does it cost to build an eCommerce website with VIRAL nexus?",
       answer:
         "The cost of an eCommerce website varies based on features, complexity, and specific requirements. Basic eCommerce sites start from ₹25,000, while advanced platforms with custom features range from ₹50,000 to ₹2,00,000+. We provide detailed quotes after understanding your specific needs, including payment gateways, inventory management, and marketing tools.",
     },
@@ -215,9 +215,9 @@ const WebDevelopment = () => {
               <h1 className="inline-block px-4 py-1 bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-sm rounded-full font-medium">
                 Best Web Development Services in Jaipur
               </h1>
-              <h1 className="mt-6 text-4xl pb-3 font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent md:text-6xl">
+              <h2 className="mt-6 text-4xl pb-3 font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent md:text-6xl">
                 Professional Web Solutions
-              </h1>
+              </h2>
               <p className="mt-6 text-gray-600 text-lg md:text-xl max-w-3xl mx-auto">
                 Web design & development services involve designing, building,
                 regularly supporting and gradually evolving different types of

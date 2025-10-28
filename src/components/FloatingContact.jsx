@@ -7,7 +7,7 @@ import { SlCallEnd } from "react-icons/sl";
 import { FaWhatsapp } from "react-icons/fa6";
 const FloatingContact = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const phoneNumber = "+919461677122";
+  const phoneNumber = "+916378362945";
 
   const handleCallClick = () => {
     if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) {
@@ -100,19 +100,19 @@ const FloatingContact = () => {
             className="relative w-16 h-16 md:w-24 md:h-24 transition-all duration-500 transform hover:scale-110 active:scale-95"
           >
             <div
-              className={`relative w-full h-full rounded-full overflow-hidden transition-all duration-500 ${
-                isOpen ? "scale-90" : "scale-100"
+              className={`relative w-full h-full    overflow-hidden transition-all duration-500 ${
+                isOpen ? "scale-50" : "scale-70"
               }`}
             >
               {/* Gradient background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500" />
+              <div className="absolute inset-0   " />
 
               {/* Avatar */}
               <Image
-                src="/images/smsavatar.png"
+                src="/images/Ecom/logo.png"
                 alt="Chat Character"
-                width={48}
-                height={48}
+                width={40}
+                height={40}
                 className="relative w-full h-full object-cover"
               />
             </div>
@@ -126,7 +126,7 @@ const FloatingContact = () => {
 
             {/* Smooth aura pulse */}
             {!isOpen && (
-              <span className="absolute inset-0 rounded-full ring-4 ring-purple-400/30 animate-[ping_2s_linear_infinite]" />
+              <span className="absolute inset-0 rounded-full  ring-4 ring-purple-400/30 animate-[ping_2s_linear_infinite]" />
             )}
           </button>
         </div>

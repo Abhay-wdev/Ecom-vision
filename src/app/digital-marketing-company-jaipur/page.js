@@ -1,39 +1,39 @@
 import AboutUs from "@/components/AboutUs";
 import React from "react";
 export const metadata = {
-  title: "Best Website Development & Digital Marketing Company in Jaipur | SEOcial Media",
+  title: "Best Website Development & Digital Marketing Company in Jaipur | VIRAL nexus",
   description:
-    "Looking for the best website development company in Jaipur? SEOcial Media offers web design, SEO, content marketing, and full-scale digital solutions tailored to your business.",
+    "Looking for the best website development company in Jaipur? VIRAL nexus offers web design, SEO, content marketing, and full-scale digital solutions tailored to your business.",
   keywords:
     "best website development company in Jaipur, top digital marketing agency, SEO company Jaipur, social media marketing Jaipur, content writing services, Google Ads Jaipur, web design services, responsive websites, Jaipur web development, startup marketing solutions",
-  authors: [{ name: "SEOcial Media Solutions" }],
-  publisher: "SEOcial Media Solutions",
+  authors: [{ name: "VIRAL nexus" }],
+  publisher: "VIRAL nexus",
   robots: "index, follow",
   alternates: {
-    canonical: "https://seocialmedia.in/digital-marketing-company-jaipur",
+    canonical: "https://ecomvision.in/digital-marketing-company-jaipur",
   },
   openGraph: {
     title: "Best Website Development & Digital Marketing Company in Jaipur",
     description:
       "Complete online marketing solutions including SEO, web development, and social media strategies.",
-    url: "https://seocialmedia.in/digital-marketing-company-jaipur",
-    siteName: "SEOcial Media Solutions",
+    url: "https://ecomvision.in/digital-marketing-company-jaipur",
+    siteName: "VIRAL nexus",
     images: [
       {
-        url: "https://seocialmedia.in/images/og-home.jpg",
+        url: "https://ecomvision.in/images/og-home.jpg",
         width: 1200,
         height: 630,
-        alt: "SEOcial Media OG Image",
+        alt: "VIRAL nexus OG Image",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEOcial Media | Best Website Development in Jaipur",
+    title: "VIRAL nexus | Best Website Development in Jaipur",
     description:
-      "SEOcial Media Solutions builds modern websites and digital strategies that deliver real results.",
-    images: ["https://seocialmedia.in/images/og-home.jpg"],
+      "VIRAL nexus builds modern websites and digital strategies that deliver real results.",
+    images: ["https://ecomvision.in/images/og-home.jpg"],
   },
 };
 

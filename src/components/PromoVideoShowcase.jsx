@@ -150,7 +150,7 @@ const DualVideoShowcase = () => {
           </div>
 
           <h2 className="text-4xl sm:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 mb-4">
-            SEOcial Media Solutions
+            VIRAL Nexus
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto rounded-full mb-6"></div>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -160,8 +160,8 @@ const DualVideoShowcase = () => {
 
         {/* Video Grid */}
         <div className="grid md:grid-cols-2 gap-6 lg:gap-8 mb-12">
-          <VideoPlayer videoId="obyYIaHxkSo" title="SEOcial Media Solutions" />
-          <VideoPlayer videoId="M_EwFmLtG7g" title="SEOcial Media Solutions" />
+          <VideoPlayer videoId="obyYIaHxkSo" title="VIRAL Nexus" />
+          <VideoPlayer videoId="M_EwFmLtG7g" title="VIRAL Nexus" />
         </div>
 
         {/* CTA */}

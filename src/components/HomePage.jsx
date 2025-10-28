@@ -247,7 +247,7 @@ const Home = () => {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "SEOcial Media Solutions",
+    name: "VIRAL nexus",
     url: "https://www.seocialmedia.in/",
     logo: "https://www.seocialmedia.in/images/company-logo.jpeg",
   };

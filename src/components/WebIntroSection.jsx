@@ -23,7 +23,7 @@ const WebIntroSection = () => {
               
               <div className="space-y-6 text-white text-justify text-lg">
                 <p>
-                  Are you wondering how your dream website can be converted into a reality? Well, you need not fantasize anymore! The expert team of website designers and website developers in Jaipur at SEOcial Media Solutions will bring your imagination alive. Whether your fantasy revolves around a single-page website in static mode or it includes complex web applications, our team of expert web designers and developers helps you create the website of your dream.
+                  Are you wondering how your dream website can be converted into a reality? Well, you need not fantasize anymore! The expert team of website designers and website developers in Jaipur at VIRAL nexus will bring your imagination alive. Whether your fantasy revolves around a single-page website in static mode or it includes complex web applications, our team of expert web designers and developers helps you create the website of your dream.
                 </p>
                 
                 <p>

@@ -60,7 +60,7 @@ const UnifiedLandingPage = () => {
                   Visit Us
                 </span>
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                  SEOcial Media Solutions
+                  VIRAL nexus
                   <span className="block text-blue-600">
                     {" "}
                     in the Heart of Jaipur
@@ -79,10 +79,11 @@ const UnifiedLandingPage = () => {
                 <div className="h-[300px] sm:h-[400px] relative">
                   <iframe
                     title="Google Map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.185377920299!2d75.759862!3d26.886502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x497961d98b0fc69b%3A0xac294f01cba870af!2sSEOcial%20Media%20Solutions!5e0!3m2!1sen!2sin!4v1698067342738!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d389.83878411219376!2d75.7426440917504!3d26.913824116109595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db30433e06845%3A0x36a0352165f0c8e7!2sBNP%20Clinic%20%26%20Rehabilitation%20Center!5e1!3m2!1sen!2sin!4v1761300085595!5m2!1sen!2sin"
                     className="w-full h-full border-none"
                     allowFullScreen
                   />
+                 
                 </div>
                 <div className="p-6 sm:p-8">
                   <div className="flex items-center gap-3 mb-6">
@@ -94,7 +95,7 @@ const UnifiedLandingPage = () => {
                         Visit Us
                       </h2>
                       <p className="text-gray-600">
-                       Sagar, 1, opp. VS Medihub, Nirman Nagar, Ranisati Nagar, Jaipur, Rajasthan 302019
+                      C-109, Nemi Nagar, Vaishali Nagar, Jaipur, Rajasthan 302021
                       </p>
                     </div>
                   </div>
@@ -105,15 +106,15 @@ const UnifiedLandingPage = () => {
                         <Phone className="text-blue-600 w-5 h-5" />
                       </div>
                       <p className="text-gray-600">
-                        +91 9461677122,
-                        <br /> +91 8949342270
+                        +91 6378362945
+                         
                       </p>
                     </div>
                     <div className="flex items-center gap-3">
                       <div className="bg-blue-100 p-2 rounded-xl">
                         <Mail className="text-blue-600 w-5 h-5" />
                       </div>
-                      <p className="text-gray-600">info@seocialmedia.in</p>
+                      <p className="text-gray-600">admin@ecomvision.in</p>
                     </div>
                   </div>
                 </div>

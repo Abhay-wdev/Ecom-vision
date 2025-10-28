@@ -43,7 +43,7 @@ const PrivacyPolicy = () => {
             title="Our Commitment to Your Privacy"
           >
             <p>
-              At <strong>SEOcial Media Solutions</strong>, we are committed to
+              At <strong>VIRAL nexus</strong>, we are committed to
               protecting your privacy. As a digital marketing agency, we
               prioritize transparency and want you to know how we handle your
               data.

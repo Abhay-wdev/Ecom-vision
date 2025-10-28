@@ -50,9 +50,9 @@ const GoogleServices = () => {
   const faqData = [
     {
       question:
-        "Why SEOcial Media Solutions is considered the best lead generation agency in Jaipur?",
+        "Why VIRAL nexus is considered the best lead generation agency in Jaipur?",
       answer:
-        "SEOcial Media Solutions stands out as the best lead generation agency in Jaipur due to our proven track record of delivering exceptional results. We combine data-driven strategies, cutting-edge technology, and deep local market knowledge to generate high-quality leads consistently. Our team of certified Google Ads experts and digital marketing specialists has helped 300+ businesses achieve an average ROI increase of 200%. We focus on understanding your unique business needs and creating customized campaigns that deliver measurable results.",
+        "VIRAL nexus stands out as the best lead generation agency in Jaipur due to our proven track record of delivering exceptional results. We combine data-driven strategies, cutting-edge technology, and deep local market knowledge to generate high-quality leads consistently. Our team of certified Google Ads experts and digital marketing specialists has helped 300+ businesses achieve an average ROI increase of 200%. We focus on understanding your unique business needs and creating customized campaigns that deliver measurable results.",
     },
     {
       question:
@@ -62,7 +62,7 @@ const GoogleServices = () => {
     },
     {
       question:
-        "Can SEOcial Media Solutions manage my Google My Business profile for better local reach and calls?",
+        "Can VIRAL nexus manage my Google My Business profile for better local reach and calls?",
       answer:
         "Absolutely! Google My Business optimization is one of our core specialties. We provide comprehensive GMB management including profile setup and optimization, regular posting, review management, photo optimization, Q&A management, and local SEO strategies. Our GMB optimization services help businesses increase their local visibility by up to 85%, resulting in more phone calls, website visits, and foot traffic. We ensure your business appears prominently in local search results and Google Maps.",
     },

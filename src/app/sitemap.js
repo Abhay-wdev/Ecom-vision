@@ -1,4 +1,6 @@
 // app/sitemap.js
+export const dynamic = "force-static"; // ✅ Add this line for static export support
+
 const URL = "https://seocialmedia.in";
 
 export default async function sitemap() {
@@ -8,17 +10,13 @@ export default async function sitemap() {
     "/career",
     "/contact",
     "/content-writing-company-jaipur",
-    "/content-writing-company-ajmer",
-    "/digital-marketing-company-jaipur",
-    "/digital-markting-services-ajmer",
     "/digital-markting-services-jaipur",
     "/google-business-profile-services-jaipur",
     "/lead-generation-company-ajmer",
-    "/lead-generation-company-jaipur ",
+    "/lead-generation-company-jaipur",
     "/privacy-policy",
     "/seo-company-ajmer",
     "/seo-company-jaipur",
-    "/social-media-marketing-company-ajmer",
     "/social-media-marketing-jaipur",
     "/top-content-writing-company-jaipur",
     "/top-lead-generation-company-jaipur",
@@ -63,20 +61,15 @@ export default async function sitemap() {
   }));
 
   return [...routes, ...blogPosts];
-  ``;
 }
 
 // Helper functions for SEO optimization
 function getPriority(route) {
-  if (route === "/") return 1.0; // Homepage highest priority
-  // if (route === "") return 0.9;
-  // if (route === "") return 0.9;
-  // if (route === "") return 0.85;
+  if (route === "/") return 1.0;
   return 0.7;
 }
 
 function getChangeFrequency(route) {
   if (route === "/blog") return "daily";
-  // if (route === "/") return "weekly";
   return "monthly";
 }

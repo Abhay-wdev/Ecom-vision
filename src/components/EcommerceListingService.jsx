@@ -41,33 +41,15 @@ const EcommerceListingService = () => {
       color: "from-blue-500 to-blue-700",
       description: "India's leading e-commerce"
     },
-    {
-      name: "eBay",
-      color: "from-yellow-400 to-red-500",
-      description: "Global auction & marketplace"
-    },
-    {
-      name: "Etsy",
-      color: "from-orange-500 to-pink-500",
-      description: "Handmade & vintage items"
-    },
-    {
-      name: "Myntra",
-      color: "from-purple-500 to-pink-500",
-      description: "Fashion & lifestyle"
-    },
-    {
-      name: "Shopify",
-      color: "from-green-400 to-green-600",
-      description: "Independent stores"
-    },
+  
+    
     {
       name: "Meesho",
       color: "from-red-400 to-pink-500",
       description: "Social commerce platform"
     },
     {
-      name: "IndiaMart",
+      name: "JioMart",
       color: "from-blue-400 to-indigo-500",
       description: "Leading marketplace"
     }

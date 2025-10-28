@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { Sparkles } from "lucide-react";
 import Link from "next/link";
- 
+ import Image from "next/image";
 
 import ProductServicesPage from "./ProductServicesPage";
 import ServicesCarousel from "./ServicesCarousel";
@@ -135,7 +135,8 @@ const AnimatedTitle = () => (
           "SEO Optimization", 1500,
           "Google Ads", 1500,
           "Social Media Marketing", 1500,
-          "Content Writing", 1500,
+          "Ecommerce Listing Services", 1500,
+          "Freelancer Marketing", 1500,
         ]}
         wrapper="div"
         speed={50}
@@ -153,19 +154,19 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen">
       <HeroBackground />
-      <div className="relative container mx-auto px-4">
+      <div className="relative  container mx-auto px-4">
         <motion.nav
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="py-6"
+          className="py-6  "
         >
           <div className="flex justify-between items-center">
             <div className="text-xl sm:text-2xl font-bold text-white">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-yellow-400">
-                SEO
+              <span className="bg-clip-text mr-2 text-transparent bg-gradient-to-r from-blue-400 to-yellow-400">
+                VIRAL 
               </span>
-              cial Media Solutions
+              Nexus
             </div>
           </div>
         </motion.nav>
@@ -207,10 +208,20 @@ const HeroSection = () => {
               </Link>
             </motion.div>
           </div>
-
-          <div className="lg:w-1/2 flex justify-center items-center">
-            <YouTubeVideo videoId={youtubeVideoId} />
+{/*
+          <div className="lg:w-1/2 flex justify-center items-center">;
+            <YouTubeVideo videoId={youtubeVideoId} />;
           </div>
+          */}
+          <div className="lg:w-1/2 flex justify-center items-center">
+  <Image
+    src="/images/Ecom/imc-2-2048x1434.jpg"
+    alt="Demo Image"
+    width={500}
+    height={300}
+    className="rounded-xl shadow-lg object-cover"
+  />
+</div>
         </div>
       </div>
       <WaveBottom />
@@ -223,7 +234,7 @@ const HomePage = () => {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "SEOcial Media Solutions",
+    name: "VIRAL nexus",
     url: "https://www.seocialmedia.in/",
     logo: "https://www.seocialmedia.in/images/company-logo.jpeg",
   };

@@ -32,7 +32,7 @@ const fadeInUp = {
 };
 
 const ContactForm = () => {
-  const WEB3FORMS_API_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
+  const WEB3FORMS_API_KEY = "b982ee6c-5ac8-475c-a013-29fc74253376";
 
   const [formData, setFormData] = useState({
     name: "",
@@ -52,21 +52,21 @@ const ContactForm = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: "+91 9461677122",
-      contact: "+91 8949342270",
+      details: "+91 6378362945",
+      
       gradient: "from-blue-500 to-cyan-500",
     },
     {
       icon: Mail,
       title: "Email",
-      details: "info@seocialmedia.in",
+      details: "admin@ecomvision.in",
       gradient: "from-purple-500 to-pink-500",
     },
     {
       icon: MapPin,
       title: "Location",
       details:
-        "Sagar, 1, opp. VS Medihub, Nirman Nagar, Ranisati Nagar, Jaipur, Rajasthan 302019",
+        "C-109, Nemi Nagar, Vaishali Nagar, Jaipur, Rajasthan 302021",
       gradient: "from-green-500 to-emerald-500",
     },
   ];
@@ -74,19 +74,19 @@ const ContactForm = () => {
   const socialLinks = [
     {
       icon: Instagram,
-      href: "https://www.instagram.com/seocialmediasolutions/",
+      href: "#",
       gradient: "from-orange-500 to-red-500",
       label: "Instagram",
     },
     {
       icon: Linkedin,
-      href: "https://www.linkedin.com/company/seocial-media-solution/",
+      href: "#",
       gradient: "from-blue-500 to-cyan-500",
       label: "LinkedIn",
     },
     {
       icon: Facebook,
-      href: "https://www.facebook.com/profile.php?id=61564390163701",
+      href: "#",
       gradient: "from-purple-500 to-pink-500",
       label: "Facebook",
     },
@@ -161,8 +161,8 @@ const ContactForm = () => {
               Contact Us
             </h1>
             <p className="mt-6 text-gray-600 text-lg md:text-xl max-w-3xl mx-auto">
-              Ready to elevate your digital presence? Reach out to SEOcial Media
-              Solutions and let&apos;s discuss how we can help grow your
+              Ready to elevate your digital presence? Reach out to  VIRAL Nexus
+                and let&apos;s discuss how we can help grow your
               business.
             </p>
           </motion.div>

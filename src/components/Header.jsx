@@ -16,33 +16,37 @@ const Header = () => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-  const menuItems = [
-    { title: "Home", href: "/" },
-    { title: "About", href: "/digital-marketing-company-jaipur" },
-    {
-      title: "Services",
-      submenu: [
-        { title: "SEO Optimization", href: "/seo-company-jaipur" },
-        {
-          title: "Social Media Marketing",
-          href: "/social-media-marketing-jaipur",
-        },
-        { title: "Google services", href: "/lead-generation-company-jaipur" },
-        {
-          title: "Website Development",
-          href: "/web-development-company-jaipur",
-        },
-        { title: "Content Writing", href: "/content-writing-company-jaipur" },
-        { title: "Video Editing", href: "/video-editing-company-jaipur" },
-         { title: "Ecommerce Listing", href: "/ecommerce-listing-service-jaipur" },
-        { title: "Our branding strategy", href: "/best-digital-marketing-branding-services-jaipur" },
-        { title: "Mobile App Development", href: "/top-app-development-company-jaipur" },
-      ],
-    },
-    { title: "Careers", href: "/career" },
-    { title: "Contact", href: "/contact" },
-    { title: "Blogs", href: "/blog" },
-  ];
+const menuItems = [
+  { title: "Home", href: "/" },
+  { title: "About", href: "/digital-marketing-company-jaipur" },
+  
+  {
+    title: "E-Commerce",
+    submenu: [
+      { title: "Amazon Account Management Services", href: "/amazon-account-management-services" },
+      { title: "Flipkart Account Management Services", href: "/flipkart-account-management-services" },
+      { title: "Meesho Account Management Services", href: "/meesho-account-management-services" },
+      { title: "JioMart Account Management Services", href: "/jiomart-account-management-services" },
+      { title: "Ecommerce Listing Services", href: "/ecommerce-listing-service-jaipur" }
+    ]
+  },
+  {
+    title: "Services",
+    submenu: [
+      { title: "Digital Marketing Services", href: "/digital-marketing-company-jaipur" },
+      { title: "Social Media Marketing", href: "/social-media-marketing-jaipur" },
+      { title: "Website Development", href: "/web-development-company-jaipur" },
+     
+      { title: "E-commerce Listing", href: "/ecommerce-listing-service-jaipur" },
+       { title: "Google Ads", href: "/lead-generation-company-jaipur" },
+      { title: "Meta Ads", href: "/meta-ads-services" },
+      
+    ]
+  },
+  { title: "Contact", href: "/contact" },
+  { title: "Blogs", href: "/blog" }
+];
+
 
   const toggleSubmenu = (title) => {
     setActiveSubmenu(activeSubmenu === title ? null : title);
@@ -58,18 +62,13 @@ const Header = () => {
           </span>
           <div className="flex items-center gap-2">
             <a
-              href="tel:+919461677122"
+              href="tel:+916378362945"
               className="text-sm text-gray-800 hover:text-indigo-600 transition-colors"
             >
-              +91 9461677122
+              +91 6378362945
             </a>
-            <span className="text-gray-300">|</span>
-            <a
-              href="tel:+918949342270"
-              className="text-sm text-gray-800 hover:text-indigo-600 transition-colors"
-            >
-              +91 8949342270
-            </a>
+         
+          
           </div>
         </div>
       </div>
@@ -79,14 +78,14 @@ const Header = () => {
   const QuickContactButtons = () => (
     <div className="flex items-center md:hidden gap-2">
       <a
-        href="tel:+919461677122"
+        href="tel:+916378362945"
         className="flex items-center justify-center w-8 h-8 bg-gradient-to-r from-green-400 to-green-500 
                  rounded-full hover:from-green-500 hover:to-green-600 transition-all"
       >
         <Phone size={16} className="text-white" />
       </a>
       <a
-        href="https://wa.me/+919461677122"
+        href="https://wa.me/+916378362945"
         target="_blank"
         rel="noreferrer"
         className="flex items-center justify-center w-8 h-8 bg-gradient-to-r from-emerald-400 to-emerald-500 
@@ -106,10 +105,10 @@ const Header = () => {
           <div className="flex items-center">
             <Link href="/">
               <Image
-                src="/images/company-logo.jpg"
+                src="/images/company-logo.webp"
                 alt="Company Logo"
-                className="h-14"
-                width={150}
+                className="h-13"
+                width={140}
                 height={50}
               />
             </Link>
@@ -144,7 +143,7 @@ const Header = () => {
 
                 {item.submenu && (
                   <div
-                    className="absolute left-0 mt-2 w-56 bg-white/90 shadow-xl rounded-lg 
+                    className="absolute left-0 mt-2 w-70 bg-white/90 shadow-xl rounded-lg 
                                   opacity-0 invisible group-hover:opacity-100 group-hover:visible 
                                   transform -translate-y-2 group-hover:translate-y-0 transition-all"
                   >

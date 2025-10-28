@@ -78,9 +78,9 @@ const services = [
 const faqs = [
   {
     question:
-      "Why is SEOcial Media Solutions considered the best digital marketing agency in Jaipur?",
+      "Why is VIRAL nexus considered the best digital marketing agency in Jaipur?",
     answer:
-      "SEOcial Media Solutions stands out due to our AI-powered strategies, client-centric approach, and proven track record in SEO, content, and web development.",
+      "VIRAL nexus stands out due to our AI-powered strategies, client-centric approach, and proven track record in SEO, content, and web development.",
   },
   {
     question: "How does your digital marketing strategy help in lead generation?",
@@ -249,12 +249,12 @@ const AboutUs = () => {
             ))}
           </div>
         </motion.div>
-
-        {/* Promo Video */}
+ {/*
+        Promo Video 
         <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="mt-24">
           <PromoVideoShowcase />
         </motion.div>
-
+*/}
         {/* FAQ */}
         <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="mt-24">
           <div className="text-center mb-16">

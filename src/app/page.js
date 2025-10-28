@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import HomePage from "@/components/Home";
 
 export const metadata ={
-  title: "Best Digital Marketing Agency in Jaipur - SEOcial Media Solutions",
+  title: "Best Digital Marketing Agency in Jaipur - VIRAL nexus",
   description: "Leading digital marketing agency in Jaipur offering comprehensive SEO, social media marketing, PPC advertising, web development, and content marketing services. Boost your online presence with proven strategies and measurable results.",
   keywords: [
     "digital marketing agency Jaipur",
@@ -21,9 +21,9 @@ export const metadata ={
     "local SEO Jaipur",
     "e-commerce marketing Jaipur"
   ],
-  authors: [{ name: "SEOcial Media Solutions" }],
-  creator: "SEOcial Media Solutions",
-  publisher: "SEOcial Media Solutions",
+  authors: [{ name: "VIRAL nexus" }],
+  creator: "VIRAL nexus",
+  publisher: "VIRAL nexus",
   formatDetection: {
     email: false,
     address: false,
@@ -34,10 +34,10 @@ export const metadata ={
     canonical: '/',
   },
   openGraph: {
-    title: "Best Digital Marketing Agency in Jaipur - SEOcial Media Solutions",
+    title: "Best Digital Marketing Agency in Jaipur - VIRAL nexus",
     description: "Transform your business with Jaipur's top-rated digital marketing agency. Expert SEO, social media marketing, PPC campaigns, and web development services delivering real ROI for local and national businesses.",
     url: 'https://seocialmedia.in', // Replace with your actual domain
-    siteName: 'SEOcial Media Solutions',
+    siteName: 'VIRAL nexus',
     type: 'website',
     locale: 'en_IN',
     images: [
@@ -45,13 +45,13 @@ export const metadata ={
         url: '/og-image.jpg', // Add your Open Graph image
         width: 1200,
         height: 630,
-        alt: 'SEOcial Media Solutions - Digital Marketing Agency Jaipur',
+        alt: 'VIRAL nexus - Digital Marketing Agency Jaipur',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Best Digital Marketing Agency in Jaipur - SEOcial Media Solutions",
+    title: "Best Digital Marketing Agency in Jaipur - VIRAL nexus",
     description: "Expert digital marketing services in Jaipur including SEO, social media marketing, PPC, and web development. Drive growth with data-driven strategies.",
     images: ['/twitter-image.jpg'], // Add your Twitter card image
     creator: '@seocialmedia', // Replace with your Twitter handle
@@ -72,7 +72,7 @@ export const metadata ={
   category: 'Digital Marketing',
   classification: 'Business',
   referrer: 'origin-when-cross-origin',
-  applicationName: 'SEOcial Media Solutions',
+  applicationName: 'VIRAL nexus',
   generator: 'Next.js',
   abstract: "Professional digital marketing agency in Jaipur specializing in SEO, social media marketing, PPC advertising, web development, and comprehensive online marketing solutions for businesses across Rajasthan and India.",
   other: {
@@ -89,8 +89,8 @@ export const metadata ={
     'business:contact_data:postal_code': '302019',
     'business:contact_data:country_name': 'India',
     'dc.language': 'en',
-    'dc.title': 'Best Digital Marketing Agency in Jaipur - SEOcial Media Solutions',
-    'dc.creator': 'SEOcial Media Solutions',
+    'dc.title': 'Best Digital Marketing Agency in Jaipur - VIRAL nexus',
+    'dc.creator': 'VIRAL nexus',
     'dc.subject': 'Digital Marketing, SEO, Social Media Marketing, PPC, Web Development',
     'dc.description': 'Professional digital marketing services in Jaipur including SEO, social media marketing, PPC advertising, and web development',
     'rating': 'General',
@@ -105,7 +105,7 @@ export const metadata ={
     'apple-mobile-web-app-status-bar-style': 'default',
     'theme-color': '#000000', // Adjust to your brand color
     'msapplication-navbutton-color': '#000000', // Adjust to your brand color
-    'apple-mobile-web-app-title': 'SEOcial Media Solutions',
+    'apple-mobile-web-app-title': 'VIRAL nexus',
     'msapplication-TileColor': '#000000', // Adjust to your brand color
   },
 };
@@ -117,13 +117,13 @@ export function generateStructuredData() {
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://seocialmedia.in/#organization",
-        "name": "SEOcial Media Solutions",
+        "@id": "https://ecomvision.in/#organization",
+        "name": "VIRAL nexus",
         "alternateName": "SEOcial Media",
         "url": "https://seocialmedia.in",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://seocialmedia.in/logo.png" // Replace with actual logo URL
+          "url": "https://ecomvision.in/logo.png" // Replace with actual logo URL
         },
         "sameAs": [
           "https://www.facebook.com/profile.php?id=61564390163701", // Replace with actual social profiles
@@ -158,9 +158,9 @@ export function generateStructuredData() {
       },
       {
         "@type": "LocalBusiness",
-        "@id": "https://seocialmedia.in/#localbusiness",
-        "name": "SEOcial Media Solutions",
-        "image": "https://seocialmedia.in/business-image.jpg",
+        "@id": "https://ecomvision.in/#localbusiness",
+        "name": "VIRAL nexus",
+        "image": "https://ecomvision.in/business-image.jpg",
         "telephone": "+91-9461677122",
         "address": {
           "@type": "PostalAddress",
@@ -201,10 +201,10 @@ export function generateStructuredData() {
       },
       {
         "@type": "ProfessionalService",
-        "@id": "https://seocialmedia.in/#service",
+        "@id": "https://ecomvision.in/#service",
         "name": "Digital Marketing Services",
         "provider": {
-          "@id": "https://seocialmedia.in/#organization"
+          "@id": "https://ecomvision.in/#organization"
         },
         "areaServed": {
           "@type": "State",
@@ -259,19 +259,19 @@ export function generateStructuredData() {
       },
       {
         "@type": "WebSite",
-        "@id": "https://seocialmedia.in/om/#website",
+        "@id": "https://ecomvision.in/om/#website",
         "url": "https://seocialmedia.in",
-        "name": "SEOcial Media Solutions",
+        "name": "VIRAL nexus",
         "description": "Best Digital Marketing Agency in Jaipur offering SEO, social media marketing, PPC, web development and content marketing services",
         "publisher": {
-          "@id": "https://seocialmedia.in/#organization"
+          "@id": "https://ecomvision.in/#organization"
         },
         "potentialAction": [
           {
             "@type": "SearchAction",
             "target": {
               "@type": "EntryPoint",
-              "urlTemplate": "https://seocialmedia.in/search?q={search_term_string}"
+              "urlTemplate": "https://ecomvision.in/search?q={search_term_string}"
             },
             "query-input": "required name=search_term_string"
           }

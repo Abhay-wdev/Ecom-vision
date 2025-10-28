@@ -8,14 +8,14 @@ const FAQAccordion = () => {
   const faqItems = [
     {
       question: "What digital marketing services do you offer?",
-      answer: "At SEOcial Media Solutions, we provide a full range of digital marketing services, including SEO, social media marketing, pay-per-click (PPC) advertising, content marketing, and website design. Our goal is to help businesses in Jaipur and beyond grow their online presence and increase revenue."
+      answer: "At VIRAL nexus, we provide a full range of digital marketing services, including SEO, social media marketing, pay-per-click (PPC) advertising, content marketing, and website design. Our goal is to help businesses in Jaipur and beyond grow their online presence and increase revenue."
     },
     {
       question: "How long does it take to see results from SEO?",
       answer: "SEO is a long-term strategy, and results typically start showing within 3 to 6 months. However, with our advanced SEO techniques and customized strategies, many businesses notice improvements in website traffic and rankings much sooner."
     },
     {
-      question: "Why should I choose SEOcial Media Solutions for digital marketing?",
+      question: "Why should I choose VIRAL nexus for digital marketing?",
       answer: "We are Jaipur’s leading digital marketing agency with a proven track record of delivering high ROI for businesses. Our team of SEO experts, content strategists, and social media specialists create data-driven campaigns that drive traffic, boost engagement, and increase conversions."
     },
     {

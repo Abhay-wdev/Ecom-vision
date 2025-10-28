@@ -7,7 +7,7 @@ const MarketingGrid = () => {
         {
           title: "Your All-in-One Digital Marketing Partner",
           description: "We don't just market your business—we build brands. From SEO and social media to PPC and content marketing, we craft strategies that drive real growth.",
-          expandedText: "At SEOcial Media Solutions, we take a 360° approach to digital marketing. Our expert team blends creativity with data-driven insights to help you rank higher, attract more customers, and grow your business online."
+          expandedText: "At VIRAL nexus, we take a 360° approach to digital marketing. Our expert team blends creativity with data-driven insights to help you rank higher, attract more customers, and grow your business online."
         },
         {
           title: "6+ Years of Helping Businesses Succeed",

@@ -163,15 +163,15 @@ const SocialMediaServices = () => {
 
   const faqs = [
     {
-      question: "Why is SEOcial Media Solutions considered the best social media company in Jaipur?",
-      answer: "SEOcial Media Solutions stands out as the premier social media company in Jaipur due to our proven track record of delivering exceptional results for over 1000+ clients. We combine data-driven strategies with creative excellence, offering comprehensive services from content creation to performance analytics. Our team of certified social media experts understands the local Jaipur market dynamics while implementing global best practices. We've consistently achieved a 95% client satisfaction rate and 300% average ROI for our clients through our innovative approach to social media marketing."
+      question: "Why is VIRAL nexus considered the best social media company in Jaipur?",
+      answer: "VIRAL nexus stands out as the premier social media company in Jaipur due to our proven track record of delivering exceptional results for over 1000+ clients. We combine data-driven strategies with creative excellence, offering comprehensive services from content creation to performance analytics. Our team of certified social media experts understands the local Jaipur market dynamics while implementing global best practices. We've consistently achieved a 95% client satisfaction rate and 300% average ROI for our clients through our innovative approach to social media marketing."
     },
     {
       question: "How does your company help generate quality leads through social media?",
       answer: "We generate quality leads through a multi-faceted approach that includes targeted advertising campaigns, compelling content marketing, and strategic audience engagement. Our process involves creating detailed buyer personas, developing lead magnets, implementing conversion-optimized landing pages, and using advanced targeting features across platforms like Facebook, Instagram, and LinkedIn. We also utilize retargeting campaigns, influencer partnerships, and community building strategies to nurture prospects through the sales funnel, ensuring higher conversion rates and better lead quality."
     },
     {
-      question: "Can SEOcial Media Solutions help increase followers organically on Instagram and Facebook?",
+      question: "Can VIRAL nexus help increase followers organically on Instagram and Facebook?",
       answer: "Absolutely! Our organic growth strategies focus on creating authentic engagement and building genuine community connections. We develop compelling content calendars, use strategic hashtag research, optimize posting times based on audience analytics, and engage meaningfully with your target audience. Our approach includes collaborating with micro-influencers, creating shareable content, running engagement campaigns, and leveraging user-generated content. We typically see 40-60% organic follower growth within the first 3 months while maintaining high engagement rates."
     },
     {

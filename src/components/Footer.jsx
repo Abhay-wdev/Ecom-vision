@@ -23,27 +23,35 @@ const Footer = () => {
   }, [pathname]);
 
   const quickLinks = [
-    { name: "SEOcial Media company in Ajmer", href: "/digital-markting-services-ajmer" },
-    { name: "SEOcial Media company in Jaipur", href: "/digital-markting-services-jaipur" },
-   
+    
+  
 
     { name: "Home", href: "/" },
     { name: "About Us", href: "/digital-marketing-company-jaipur" },
     { name: "Blog", href: "/blog" },
     { name: "Careers", href: "/career" },
     { name: "Contact Us", href: "/contact" },
-    { name: "Privacy & policy", href: "/privacy-policy" },
+    
   ];
+  const accountman = [
+    
+  { title: "Amazon Account Management", href: "/amazon-account-management-services" },
+      { title: "Flipkart Account Management", href: "/flipkart-account-management-services" },
+      { title: "Meesho Account Management", href: "/meesho-account-management-services" },
+      { title: "JioMart Account Management", href: "/jiomart-account-management-services" }
 
+   
+    
+  ];
+//{ name: "Privacy & policy", href: "/privacy-policy" }
   const services = [
-    { name: "SEO Optimization", href: "/seo-company-jaipur" },
-    { name: "Social Media Marketing", href: "/social-media-marketing-jaipur" },
-    { name: "Google Services", href: "/lead-generation-company-jaipur" },
-    { name: "Website Development", href: "/web-development-company-jaipur" },
-    { name: "Content Writing", href: "/content-writing-company-jaipur" },
-    { name: "Video Editing", href: "/video-editing-company-jaipur" },
-    { name: "Our branding strategy", href: "/best-digital-marketing-branding-services-jaipur" },
-    { name: "Mobile App Development", href: "/top-app-development-company-jaipur" },
+    { title: "Digital Marketing Services", href: "/digital-marketing-company-jaipur" },
+      { title: "Social Media Marketing", href: "/social-media-marketing-jaipur" },
+      { title: "Website Development", href: "/web-development-company-jaipur" },
+     
+      { title: "E-commerce Listing", href: "/ecommerce-listing-service-jaipur" },
+       { title: "Google Ads", href: "/lead-generation-company-jaipur" },
+      { title: "Meta Ads", href: "/meta-ads-services" },
      
   ];
 
@@ -51,37 +59,38 @@ const Footer = () => {
     {
       name: "Facebook",
       icon: Facebook,
-      href: "https://www.facebook.com/profile.php?id=61564390163701",
+      href: "#",
     },
     {
       name: "Instagram",
       icon: Instagram,
-      href: "https://www.instagram.com/seocialmediasolutions/",
+      href: "#",
     },
     {
       name: "LinkedIn",
       icon: Linkedin,
-      href: "https://www.linkedin.com/company/seocial-media-solution/",
+      href: "#",
     },
   ];
 
   return (
     <footer className="bg-[#101340] text-gray-300">
-      <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="max-w-8xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Company Info */}
-          <div className="space-y-6">
+          <div className="space-y-6 ">
             <Image
-              src="/images/footer-logo.jpg"
+              src="/images/company-logo.webp"
               alt="Company Logo"
               width={120}
               height={48}
-              className="h-12 w-auto"
+              className="h-15 p-2 bg-amber-50 rounded-xl w-auto"
             />
             <p className="text-sm leading-relaxed">
               Empowering businesses with comprehensive digital marketing solutions that drive real growth. 
               Your trusted partner in the digital transformation journey.
             </p>
+            {/* Social Media Icons 
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
                 <Link
@@ -96,6 +105,7 @@ const Footer = () => {
                 </Link>
               ))}
             </div>
+            */}
           </div>
 
           {/* Quick Links */}
@@ -118,7 +128,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-6">Our Services</h3>
+            <h3 className="text-lg font-semibold text-white mb-6"> Services</h3>
             <ul className="space-y-4">
               {services.map((service) => (
                 <li key={service.name}>
@@ -127,13 +137,29 @@ const Footer = () => {
                     className="text-sm hover:text-white hover:underline transition-colors duration-300 flex items-center"
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
-                    {service.name}
+                    {service.title}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
+<div>
+            <h3 className="text-lg font-semibold text-white mb-6">E-Commerce Services</h3>
+            <ul className="space-y-4">
+              {accountman.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    href={link.href}
+                    className="text-sm hover:text-white hover:underline transition-colors duration-300 flex items-center"
+                  >
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    {link.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
           {/* Contact Info */}
           <div>
             <h3 className="text-lg font-semibold text-white mb-6">Contact Us</h3>
@@ -141,23 +167,21 @@ const Footer = () => {
               <div className="flex items-start">
                 <MapPin className="w-5 h-5 mr-3 mt-1 flex-shrink-0" />
                 <p className="text-sm">
-                 Sagar, 1, opp. VS Medihub, Nirman Nagar, Ranisati Nagar, Jaipur, Rajasthan 302019
+                  
+                 C-109, Nemi Nagar, Vaishali Nagar, Jaipur, Rajasthan 302021
                 </p>
               </div>
               <div className="flex items-center">
                 <Phone className="w-5 h-5 mr-3 flex-shrink-0" />
-                <a href="tel:+919461677122" className="text-sm hover:text-white transition-colors duration-300">
-                  +91 9461677122
+                <a href="tel:+916378362945" className="text-sm hover:text-white transition-colors duration-300">
+                  +91 6378362945
                 </a>
-                ,&nbsp;
-                <a href="tel:+918949342270" className="text-sm hover:text-white transition-colors duration-300">
-                  +91 8949342270
-                </a>
+              
               </div>
               <div className="flex items-center">
                 <Mail className="w-5 h-5 mr-3 flex-shrink-0" />
-                <a href="mailto:info@seocialmedia.in" className="text-sm hover:text-white transition-colors duration-300">
-                  info@seocialmedia.in
+                <a href="mailto:admin@ecomvision" className="text-sm hover:text-white transition-colors duration-300">
+                  admin@ecomvision.in
                 </a>
               </div>
             </div>
@@ -166,7 +190,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t border-gray-800 text-center">
-          <p className="text-sm">© {currentYear} SEOcial Media Solutions. All rights reserved.</p>
+          <p className="text-sm">© {currentYear} VIRAL nexus. All rights reserved.</p>
         </div>
       </div>
     </footer>
